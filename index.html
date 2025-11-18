@@ -1,52 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8" />
 <title>Exercise 14</title>
 
 <style>
-    body {
-        font-family: Georgia, serif;
-        background: #e9e9e9;
-        padding: 40px;
-    }
+  body {
+    font-family: "Times New Roman", Times, serif;
+    background: #e9e9e9;
+    padding: 40px;
+  }
 
-    .wrapper {
-        width: 650px;
-        margin: auto;
-        background: #ffffff;
-        padding: 30px;
-        border: 1px solid #ccc;
-        box-shadow: 0 0 20px rgba(0,0,0,0.15);
-    }
+  .wrapper {
+    width: 650px;
+    margin: auto;
+    background: #ffffff;
+    padding: 30px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 20px rgba(0,0,0,0.15);
+  }
 
-    /* Heading 1 */
-    h1 {
-        font-size: 42px;
-        font-weight: bold;
-        margin: 0 0 35px 0;
-        padding-top: 15px;
-        border-top: 5px solid black;
-        text-shadow: 2px 2px 4px pink;
-    }
+  /* Heading 1 */
+  h1 {
+    font-size: 42px;
+    font-weight: bold;
+    margin: 0 0 35px 0;
+    padding-top: 15px;
+    display: inline-block; /* supaya garis atas hanya sepanjang teks */
+    border-top: 5px solid black;
+    text-shadow: 2px 2px 4px pink;
+  }
 
-    /* Heading 2 */
-    h2 {
-        font-size: 28px;
-        font-style: italic;
-        border: 2px solid #bbbb00; 
-        padding: 10px;
-        background: rgba(255,255,0,0.2); 
-        margin-bottom: 45px;
-    }
+  /* Container untuk highlight kuning di luar kotak */
+  .highlight-box {
+    background: #ffff99; /* highlight kuning */
+    display: inline-block; /* supaya ukuran pas dengan isi */
+    padding: 4px; /* jarak highlight dari border kotak */
+    margin-bottom: 45px;
+  }
 
-    /* Heading 3 */
-    h3 {
-        font-size: 22px;
-        text-align: right;
-        text-decoration: underline;
-        margin: 0;
-    }
+  /* Heading 2 */
+  h2 {
+    font-size: 28px;
+    font-style: italic;
+    background: white; /* background putih */
+    border: 2px solid black; /* border hitam */
+    margin: 0;
+    padding: 10px 15px;
+    display: inline-block;
+  }
+
+  /* Heading 3 */
+  h3 {
+    font-size: 22px;
+    text-align: right;
+    text-decoration: underline;
+    margin: 0;
+  }
 </style>
 
 </head>
@@ -54,11 +64,13 @@
 
 <div class="wrapper">
 
-    <h1>This is heading 1</h1>
+  <h1>This is heading 1</h1>
 
+  <div class="highlight-box">
     <h2>This is heading 2</h2>
+  </div>
 
-    <h3>This is heading 3</h3>
+  <h3>This is heading 3</h3>
 
 </div>
 
